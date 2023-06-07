@@ -113,7 +113,7 @@
 function redirectToWhatsApp() {
     var service=["Interior","Exterior","Singage"]
     // Replace the phone number and message with your desired values
-    var phoneNumber = "+918884249383"; // Replace with the phone number you want to send the message to
+    var phoneNumber = "+919663318125"; // Replace with the phone number you want to send the message to
     const custName= document.getElementById('NameofCustomer').value;
     const custEmail=document.getElementById("EmailIdOfCustomer").value;
     const custTypeofService=document.getElementById("OptionSelected").value;
@@ -126,7 +126,7 @@ function redirectToWhatsApp() {
 
 function redirectToWhatsAppForEnquery() {
     // Replace the phone number and message with your desired values
-    var phoneNumber = "+918884249383"; // Replace with the phone number you want to send the message to
+    var phoneNumber = "+919663318125"; // Replace with the phone number you want to send the message to
     
     var message = "*Enquiry Alert*: Hi there, I'm looking for a service and have a query."; // Replace with the message you want to send
     var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);

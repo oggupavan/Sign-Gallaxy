@@ -107,8 +107,47 @@
             }
         }
     });
+    $('.client-carousel').slick({
+        slidesToShow: 4, // Number of logos to show at once
+        slidesToScroll: 1,
+        autoplay: true, // Set to false if you don't want automatic scrolling
+        autoplaySpeed: 2000, // Delay between slides in milliseconds
+        dots: false, // Set to true if you want to show navigation dots
+        arrows: false // Set to true if you want to show navigation arrows
+    });
     
 })(jQuery);
+
+$(document).ready(function() {
+    $('.client-carousel').slick({
+        slidesToShow: 4, // Number of logos to show at once
+        slidesToScroll: 1,
+        autoplay: true, // Set to false if you don't want automatic scrolling
+        autoplaySpeed: 2000, // Delay between slides in milliseconds
+        dots: false, // Set to true if you want to show navigation dots
+        arrows: false // Set to true if you want to show navigation arrows
+    });
+
+    var logos = [
+        "img/Logos/logo 1.jpg",
+        "img/Logos/logo 2.jpg",
+        "img/Logos/logo 3.jpg",
+        "img/Logos/logo 4.jpg",
+        "img/Logos/logo 5.jpg",
+        "img/Logos/logo 6.jpg",
+        "img/Logos/logo 8.jpg",
+        
+        // Add more logo URLs as needed
+    ];
+    
+    var logoContainer = $('.client-carousel');
+    
+    $.each(logos, function(index, logo) {
+        var logoElement = $('<img>').attr('src', logo);
+        logoContainer.append(logoElement);
+    });
+});
+
 
 function redirectToWhatsApp() {
     var service=["Interior","Exterior","Singage"]

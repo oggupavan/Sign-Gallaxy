@@ -510,4 +510,57 @@
     opacity: 1;
     filter: none;
   }
+
+.client-carousel {
+    width: 100%;
+}
+
+.client-carousel img {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+  
+.customer-logos {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .Clients-slide {
+    width: 20%;
+    height: 100px;
+    float: left;
+    margin: 0 2.5%;
+  }
+  
+  .Clients-slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .slick-dots li {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .slick-dots li.active {
+    background-color: #fff;
+  }
   

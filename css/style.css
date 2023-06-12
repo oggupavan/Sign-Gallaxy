@@ -579,5 +579,47 @@
     object-fit: cover;
     border-radius: 20px;
   }
+
+    .client-logo-carousel {
+      display: flex;
+      overflow: hidden;
+      animation: carouselAnimation .5s infinite;
+    }
+    
+    .client-logo-carousel img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    
+    @keyframes carouselAnimation {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-220px);
+      }
+      45% {
+        transform: translateX(-220px);
+      }
+      50% {
+        transform: translateX(-440px);
+      }
+      70% {
+        transform: translateX(-440px);
+      }
+      75% {
+        transform: translateX(-660px);
+      }
+      95% {
+        transform: translateX(-660px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
   
   

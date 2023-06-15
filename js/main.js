@@ -171,3 +171,4 @@ function redirectToWhatsAppForEnquery() {
     var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
     window.open(url)
 }
+
